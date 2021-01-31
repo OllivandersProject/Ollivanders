@@ -1,67 +1,156 @@
-from src.backstagePasses import backstagePasses
+from src.backstagePasses import BackstagePasses
+import pytest
 
 
 def test_bakstage_passes_day_0():
-    assert Item('BackstagePasses', 15, 20).update_quality()
-    assert Item('BackstagePasses', 10, 49).update_quality()
-    assert Item('BackstagePasses', 5, 49).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 15, 20)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 21
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 10, 49)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 5, 49)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
 
 
 def test_bakstage_passes_day_1():
-    assert Item('BackstagePasses', 14, 21).update_quality()
-    assert Item('BackstagePasses', 9, 50).update_quality()
-    assert Item('BackstagePasses', 4, 50).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 14, 21)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 22
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 5, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 5, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
 
 
 def test_bakstage_passes_day_2():
-    assert Item('BackstagePasses', 13, 20).update_quality()
-    assert Item('BackstagePasses', 8, 50).update_quality()
-    assert Item('BackstagePasses', 3, 50).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 13, 22)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 23
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 8, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 3, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
 
 
 def test_bakstage_passes_day_3():
-    assert Item('BackstagePasses', 12, 23).update_quality()
-    assert Item('BackstagePasses', 7, 50).update_quality()
-    assert Item('BackstagePasses', 2, 50).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 12, 23)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 24
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 7, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 2, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
 
 
 def test_bakstage_passes_day_4():
-    assert Item('BackstagePasses', 11, 24).update_quality()
-    assert Item('BackstagePasses', 6, 50).update_quality()
-    assert Item('BackstagePasses', 1, 50).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 11, 24)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 25
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 6, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 1, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
 
 
 def test_bakstage_passes_day_5():
-    assert Item('BackstagePasses', 10, 25).update_quality()
-    assert Item('BackstagePasses', 5, 50).update_quality()
-    assert Item('BackstagePasses', 0, 50).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 10, 25)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 27
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 5, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 0, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 0
 
 
 def test_bakstage_passes_day_6():
-    assert Item('BackstagePasses', 9, 27).update_quality()
-    assert Item('BackstagePasses', 4, 50).update_quality()
-    assert Item('BackstagePasses', -1, 50).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 9, 27)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 29
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 4, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses',  -1, 0)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 0
 
 
 def test_bakstage_passes_day_7():
-    assert Item('BackstagePasses', 8, 29).update_quality()
-    assert Item('BackstagePasses', 3, 50).update_quality()
-    assert Item('BackstagePasses', -2, 0).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 8, 29)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 31
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 2, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses',  -3, 0)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 0
 
 
 def test_bakstage_passes_day_8():
-    assert Item('BackstagePasses', 7, 31).update_quality()
-    assert Item('BackstagePasses', 2, 50).update_quality()
-    assert Item('BackstagePasses', -3, 0).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 7, 31)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 33
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 2, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 50
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses',  -3, 0)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 0
 
 
 def test_bakstage_passes_day_9():
-    assert Item('BackstagePasses', 6, 33).update_quality()
-    assert Item('BackstagePasses', 1, 50).update_quality()
-    assert Item('BackstagePasses', -4, 0).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 6, 33)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 35
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 0, 50)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 0
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses',  -5, 0)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 0
 
 
 def test_bakstage_passes_day_10():
-    assert Item('BackstagePasses', 5, 35).update_quality()
-    assert Item('BackstagePasses', 0, 50).update_quality()
-    assert Item('BackstagePasses', -5, 0).update_quality()
+    BackstagePassesItem = BackstagePasses('BackstagePasses', 4, 38)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 41
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses', -1, 0)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 0
+
+    BackstagePassesItem = BackstagePasses('BackstagePasses',  -6, 0)
+    BackstagePassesItem.update_quality()
+    assert BackstagePassesItem.get_quality() == 0
