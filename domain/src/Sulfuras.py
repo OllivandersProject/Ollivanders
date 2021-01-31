@@ -35,7 +35,7 @@ class Sulfuras():
     def set_legendary(self, legendary):
         self.legendary = legendary
         
-    def udpate_quality(self):
+    def update_quality(self):
         
         assert self.get_quality() == 80, f"quality de {self.__class__.__name__} distinta de 80"
         pass

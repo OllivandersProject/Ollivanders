@@ -6,4 +6,9 @@ vendor
 .idea
 *.iml
 
+
+#* INIT PACKAGE PYTHON
 __init__.py
+
+#* VIRTUAL ENVIRONMENT
+/ollivanders_venv

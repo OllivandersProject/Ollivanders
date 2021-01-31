@@ -1,5 +1,5 @@
 
-from domain.src.Sulfuras import Sulfuras
+from src.Sulfuras import Sulfuras
 import pytest
 
 def test_sulfuras_properties():
@@ -16,7 +16,7 @@ def test_sulfuras_day_one():
     
     sulfuraItem.update_quality()
     
-    assert sulfuraItem.get_Quality() == 80
+    assert sulfuraItem.get_quality() == 80
 
 def test_sulfuras_day_two():
     
@@ -24,7 +24,7 @@ def test_sulfuras_day_two():
     
     sulfuraItem.update_quality()
     
-    assert sulfuraItem.get_Quality() == 80
+    assert sulfuraItem.get_quality() == 80
     
 def test_sulfuras_day_three():
     
@@ -32,7 +32,7 @@ def test_sulfuras_day_three():
     
     sulfuraItem.update_quality()
     
-    assert sulfuraItem.get_Quality() == 80
+    assert sulfuraItem.get_quality() == 80
     
 def test_sulfuras_day_four():
     
@@ -40,7 +40,7 @@ def test_sulfuras_day_four():
     
     sulfuraItem.update_quality()
     
-    assert sulfuraItem.get_Quality() == 80
+    assert sulfuraItem.get_quality() == 80
     
 def test_sulfuras_day_five():
     
@@ -48,7 +48,7 @@ def test_sulfuras_day_five():
     
     sulfuraItem.update_quality()
     
-    assert sulfuraItem.get_Quality() == 80
+    assert sulfuraItem.get_quality() == 80
     
 def test_sulfuras_day_six():
     
@@ -56,4 +56,4 @@ def test_sulfuras_day_six():
     
     sulfuraItem.update_quality()
     
-    assert sulfuraItem.get_Quality() == 80
+    assert sulfuraItem.get_quality() == 80
