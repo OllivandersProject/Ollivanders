@@ -5,3 +5,7 @@ obj
 vendor
 .idea
 *.iml
+__pycache__
+.vscode
+.pytest_cache
+__init__.py
