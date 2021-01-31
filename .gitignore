@@ -5,3 +5,9 @@ obj
 vendor
 .idea
 *.iml
+
+#* INIT PACKAGE
+__init__.py
+
+#* VIRTUAL ENVIRONMENT
+/ollivanders_venv
