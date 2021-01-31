@@ -5,3 +5,5 @@ obj
 vendor
 .idea
 *.iml
+
+__init__.py
