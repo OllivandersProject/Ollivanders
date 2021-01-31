@@ -37,7 +37,7 @@ class Sulfuras():
         
     def update_quality(self):
         
-        assert self.get_quality() == 80, f"quality de {self.__class__.__name__} distinta de 80"
+        assert self.get_quality() == 80, f"The Quality of {self.__class__.__name__} is different of 80"
         pass
     
     
