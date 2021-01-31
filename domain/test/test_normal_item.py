@@ -1,5 +1,5 @@
+from src.normal_item import NormalItem
 import pytest
-from
 
 
 def test_normal_item_day_0():
