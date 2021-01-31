@@ -5,3 +5,8 @@ obj
 vendor
 .idea
 *.iml
+
+
+
+#* VIRTUAL ENVIRONMENT
+/ollivanders_venv
