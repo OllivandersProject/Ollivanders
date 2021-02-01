@@ -42,3 +42,6 @@ class BackstagePasses():
         else:
             self.set_quality(0)
         self.set_sell_in(self.get_sell_in())
+
+        def __str__(self):
+            return "***************Item*************** \n Name: %s,\n Sell in: %d,\n Quality: %d" % (self.get_name(), self.get_sell_in(), self.get_quality())
