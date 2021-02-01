@@ -32,9 +32,9 @@ class AgedBrie():
     def update_quality(self):
 
         if self.sell_in > 0:
-            self.set_quality(+1)
+            self.set_quality(1)
         else:
-            self.set_quality(+2)
+            self.set_quality(2)
         self.set_sell_in(self.get_sell_in())
 
         def __str__(self):
