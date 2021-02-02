@@ -1,5 +1,5 @@
-
-class Conjured():
+from normal_item import NormalItem
+class Conjured(NormalItem):
     
     def __init__(self, name='', sell_in=0, quality=50):
         super().__init__(name, sell_in, quality)
