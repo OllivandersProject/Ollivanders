@@ -26,7 +26,7 @@ class NormalItem():
             self.quality -= value
         else:
             self.quality = 0
-        assert 0 <= self.quality <= 50, f"The quality of {self.__cla:__name__} overcome the maximun quality"
+        assert 0 <= self.quality <= 50, f"The quality of {self.__class__.__name__} overcome the maximun quality"
 
     def update_quality(self):
         if self.sell_in > 0:
