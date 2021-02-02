@@ -8,6 +8,7 @@ def test_backstage_passes_properties():
     assert backstage_passes_item.get_name() == "BackstagePasses"
     assert backstage_passes_item.get_sell_in() == 15
     assert backstage_passes_item.get_quality() == 20
+    assert backstage_passes_item.__str__() == "***************Item*************** \n Name: BackstagePasses,\n Sell in: 15,\n Quality: 20"
 
 
 def test_bakstage_passes_day_0():
