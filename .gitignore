@@ -1,3 +1,5 @@
+# Prestablished Config
+
 bin
 obj
 *.sln.DotSettings.user
@@ -6,11 +8,11 @@ vendor
 .idea
 *.iml
 
+# Python data
 
-
-#* VIRTUAL ENVIRONMENT
-/ollivanders_venv
-
-#* INIT PACKAGES
-__init__.py
-__pycache__
+ollivanders_venv
+init.py
+pycache
+.vscode
+.pytest_cache
+dist
