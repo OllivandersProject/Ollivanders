@@ -1,3 +1,5 @@
+# Prestablished Config
+
 bin
 obj
 *.sln.DotSettings.user
@@ -5,3 +7,12 @@ obj
 vendor
 .idea
 *.iml
+
+# Python data
+
+ollivanders_venv
+init.py
+pycache
+.vscode
+.pytest_cache
+dist
