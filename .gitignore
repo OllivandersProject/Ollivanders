@@ -11,8 +11,8 @@ vendor
 # Python data
 
 ollivanders_venv
-__init__.py
-__pycache__
+init.py
+pycache
 .vscode
 .pytest_cache
 dist
