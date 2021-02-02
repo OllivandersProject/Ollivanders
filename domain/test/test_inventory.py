@@ -74,4 +74,4 @@ def test_update_quality_items():
     
     inventory.update_quality_items()
     
-    assert inventory.__str__() == "***************Item*************** \n Name: Conjured Item,\n Sell in: 5,\n Quality: 28 \n ***************Item*************** \n Name: AgedBrie,\n Sell in: 1,\n Quality: 1 \n ***************Item*************** \n Name: BackstagePasses,\n Sell in: 14,\n Quality: 21"
+    assert inventory.__str__() == "***************Item*************** \n Name: Conjured Item,\n Sell in: 5,\n Quality: 28 \n***************Item*************** \n Name: AgedBrie,\n Sell in: 1,\n Quality: 1 \n***************Item*************** \n Name: BackstagePasses,\n Sell in: 14,\n Quality: 21"
