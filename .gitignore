@@ -5,3 +5,12 @@ obj
 vendor
 .idea
 *.iml
+
+
+
+#* VIRTUAL ENVIRONMENT
+/ollivanders_venv
+
+#* INIT PACKAGES
+__init__.py
+__pycache__
