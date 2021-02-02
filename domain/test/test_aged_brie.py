@@ -8,6 +8,7 @@ def test_conjured_properties():
     assert aged_brie_item.get_name() == 'AgedBrie'
     assert aged_brie_item.get_sell_in() == 15
     assert aged_brie_item.get_quality() == 10
+    assert aged_brie_item.__str__() == "***************Item*************** \n Name: AgedBrie,\n Sell in: 15,\n Quality: 10"
 
 
 def test_aged_brie_day_0():
