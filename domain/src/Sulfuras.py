@@ -16,5 +16,3 @@ class Sulfuras(NormalItem):
         
         assert self.get_quality() == 80, f"The Quality of {self.__class__.__name__} is different of 80"
         pass
-    
-    

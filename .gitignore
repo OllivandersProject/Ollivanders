@@ -9,6 +9,6 @@ vendor
 
 #* INIT PACKAGE PYTHON
 __init__.py
-
+__pycache__
 #* VIRTUAL ENVIRONMENT
 /ollivanders_venv
