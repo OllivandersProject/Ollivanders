@@ -26,4 +26,8 @@ class Inventory():
         
         items_seccion = ''
         for item in self.items:
-            items_seccion += item.__str__() + '\n'
+            items_seccion += item.__str__() + " \n "
+            
+
+        return items_seccion
+            
