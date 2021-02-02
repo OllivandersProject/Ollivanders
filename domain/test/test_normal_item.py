@@ -8,6 +8,7 @@ def test_propiedades():
     assert normal.get_name() == 'NormalItem'
     assert normal.get_sell_in() == 10
     assert normal.get_quality() == 20
+    assert normal.__str__() == "***************Item*************** \n Name: NormalItem,\n Sell in: 10,\n Quality: 20"
 
 
 def test_normal_item_day_0():
