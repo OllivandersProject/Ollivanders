@@ -1,5 +1,5 @@
 
-
+import src.Inventory import Inventory
 import pytest
 
 def test_inventory_properties():
