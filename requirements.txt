@@ -1,0 +1,6 @@
+
+#* Linter
+autopep8
+
+#* TESTS
+pytest
