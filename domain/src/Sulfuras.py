@@ -1,4 +1,4 @@
-
+from normal_item import NormalItem
 class Sulfuras(NormalItem):
     
     def __init__(self, name='', sell_in=0, quality=80):
