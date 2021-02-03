@@ -57,7 +57,10 @@ def test_to_string_items():
     
     inventory.add_items(items)
     
-    assert inventory.__str__() == "***************Item*************** \n Name: Conjured Item,\n Sell in: 6,\n Quality: 30\n ***************Item*************** \n Name: AgedBrie,\n Sell in: 2,\n Quality: 0\n ***************Item*************** \n Name: BackstagePasses,\n Sell in: 15,\n Quality: 20\n "
+    assert inventory.__str__() == "***************Item*************** \n Name: Conjured Item,\n Sell in: 6,\n Quality: 30 \n ***************Item*************** \n Name: AgedBrie,\n Sell in: 2,\n Quality: 0 \n ***************Item*************** \n Name: BackstagePasses,\n Sell in: 15,\n Quality: 20 \n "
+    
+    
+    
     
 def test_update_quality_items():
     
@@ -77,5 +80,4 @@ def test_update_quality_items():
     
     inventory.update_quality_items()
     
-    assert inventory.__str__() == "***************Item*************** \n Name: Conjured Item,\n Sell in: 5,\n Quality: 28\n ***************Item*************** \n Name: AgedBrie,\n Sell in: 1,\n Quality: 1\n ***************Item*************** \n Name: BackstagePasses,\n Sell in: 14,\n Quality: 21\n "
-
+    assert inventory.__str__() == "***************Item*************** \n Name: Conjured Item,\n Sell in: 5,\n Quality: 28 \n ***************Item*************** \n Name: AgedBrie,\n Sell in: 1,\n Quality: 1 \n ***************Item*************** \n Name: BackstagePasses,\n Sell in: 14,\n Quality: 21 \n "
