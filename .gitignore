@@ -8,6 +8,7 @@ vendor
 .idea
 *.iml
 
+
 # Python data
 
 ollivanders_venv
@@ -16,3 +17,4 @@ __pycache__
 .vscode
 .pytest_cache
 dist
+
